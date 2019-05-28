@@ -1,0 +1,209 @@
+@import "http://fonts.fontstorage.com/import/fregat.css";
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: "Fregat";
+	
+	font-weight: bold;
+	
+}
+header {
+  border: 1px solid #f2f2f2;
+  padding: 0;
+  margin: 0;
+  background:#f2f2f2;
+
+  }
+footer {
+	background:#f2f2f2;
+	padding-top: 20px;
+}
+article {margin-bottom: 105px;}
+.side-margin {
+	margin-right: 18%;
+	margin-left: 12.5%;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.main-menu, .menu, .menu-footer  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.main-menu a, .menu-footer a {
+  display: block;
+  padding: 0;
+  color: #1a09c9;
+  text-decoration: none;
+  
+}
+.menu a {
+  display: block;
+  padding: 4px 0px;
+  color: #555555;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 5px;
+  
+}
+.main-menu li, .menu-footer li{
+  display: inline-block;
+  margin-right: 23px;
+  text-transform: uppercase;
+}
+.main-menu {margin-top: 6px;}
+.main-menu .main-menu-cell3 { margin-right:9px;}
+/* .for label {
+	font-size: 12px;
+} */
+
+.azz .ass input[type="submit"] {
+    padding:5px;
+    background:rgba(0, 0, 0, 0);
+    color:#555555; 
+	border:1px solid #555555;
+    border-radius:20px;
+    margin:auto;
+    width:183px;
+	font-weight: bold;
+	font-family: "Fregat";
+	font-size: 16px;
+}
+.menu-head  {
+	display: flex;
+	justify-content:space-between;
+}
+.fors .active{font-size:16px;font-family:"Fregat";}
+.logo {margin-top: 3px;margin-bottom: 55px;}
+.logo-image {
+	margin-left: 2px;
+	margin-top: 50px;
+	margin-right: 28px;
+}
+.logo-text {position:relative; margin-top: 10px;}
+.logo-text,.logo-image {		
+	display: inline-block;
+	vertical-align: top;
+	padding:0;}
+.logo-text a{
+	text-decoration: none;
+}
+.logo-text a:visited {color:#555555; }
+.logo-text h1 {margin-top: 35px;
+	margin-bottom: -10px;}
+.logo-text .big{
+	letter-spacing: 1px;
+	line-height: normal;
+	font-family: "Fregat";
+	font-size:31px;
+	}
+.small { 
+text-transform:none;
+} 
+h2 {margin-top: 8px; font-size: 30px;
+}
+.fors {
+	margin-bottom: 40px;
+	margin-top: 75px;
+}
+.rof .cell {
+	margin-left: 250px;
+	display: inline-block;
+}
+.gram {
+	display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.searching-line {	
+	margin: 3px 0 0 3px ;	
+}
+.searching-line {
+  width: 23.5%;
+  position: relative;
+}
+
+.searching-line input {
+  border: none;
+}
+.searching-line .input-line {
+  width: 100%;
+  padding: 10px 5px 10px 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 2px 2px rgba(0,0,0,0.9);
+  border-radius: 20px;
+  background: #FFF;
+  font: 12px Arial, sans-serif ;
+  color: #555;
+  outline: none;
+  opacity:0.5;
+}
+
+.searching-line .input-line:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #fff;
+  color: #333;
+}
+
+.searching-line .magnifier {
+  position: absolute;
+  top: 10;
+  right: 10;
+  width: 17px;
+  height: 100%;
+  cursor: pointer;
+  opacity:1;
+}
+.searching-line .magnifier:hover {
+  opacity: 0.8;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+.searching-line input{ 
+padding-left: 10px;
+}
+.searching-line .magnifier {
+	background: url(lypa.gif) no-repeat;
+}
+.grams {
+	display: flex;
+	justify-content: space-between;
+}
+/* .mm{margin-top:4px;} */
+.mms {
+	margin-left: 2px;
+	display: inline-block;
+}
+.mmm p{
+	margin: 3px -2px 30px 0;
+	}
+nav .azz{
+	margin: 11px 0;}
+form label {
+float: left;
+width: 150px;
+text-align: left;
+margin-right: 10px;}
+.arial { font: 12px Arial, sans-serif ;}
+ section {color:#555555; }
+.field input[type="checkbox"]{float:left;}
+.form .forma {width: auto; float: none;}
+/* { position: static;} */
+.form .field {margin-bottom: 29px;	font-size: 12px;}
+.field:nth-child(6) input {border-radius: 30px; }
+.field:nth-child(4) {margin-top:-2px;margin-bottom: 35px;}
+.form textarea {border-radius: 10px; height: 165px;}
+.form select {border-radius: 10px;}
+.form input[type="submit"] {margin-left: 160px;margin-top:13px;padding: 15px 70px; background: white; border:1px solid #1a09c9; color:#1a09c9;font-weight: bold;}
+.afd input[type="submit"]:hover {background-color:#1a09c9;color:white;}
+.style-cell {border-color: white; background:#f6f6f6; border-radius: 5px; padding-top:10px;/* box-shadow: 0 2px 4px #afafaf; */}
+.cell-1 {width:460px; min-height:20px;}
+.cell-2 {width:300px;}
+.cell-3 {width:300px;}
+.cell-4 {width: 460px;}
