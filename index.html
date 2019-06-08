@@ -1,95 +1,102 @@
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Сферический сайт</title>
+
+<head>
+	<meta charset="utf-8">
+	<title>Сферический сайт</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
+</head>
+
+<body>
 	<header>
-		<nav class="side-margin">
-		<form class="azz">
-		<div class="grams">
-		 <div class="mm">
-			<ul class="main-menu text-uppercase">	
-				<li><a href="">Главная</a></li>
-				<li><a href="">Не Особо</a></li>
-				<li class="main-menu-cell3"><a href="">Вообще Нет</a></li>
-				<li class="ass">
-				<input class="text-uppercase add" type="submit" value="Добавление товара">
-				</li>
-			</ul>
-		</div>
-			<div class="searching-line">
-			<input type="search" name="" placeholder="Поиск" class="input-line">
-			<input type="submit" name="" value="" class="magnifier">
-			</div>
-		</div>
-		</form>
+		<nav class="side-indents">
+			<form class="azz header-content">
+				<div class="header">
+					<div class="header-menu">
+						<ul class="text-uppercase">
+							<li class=""><a href="">Главная</a></li>
+							<li class=""><a href="">Не Особо</a></li>
+							<li class="indent-right"><a href="">Вообще Нет</a></li>
+							<li class="add-product">
+								<input class="text-uppercase add" type="submit" value="Добавление товара">
+							</li>
+						</ul>
+					</div>
+					<div class="searching-line">
+						<input type="search" name="searching-line" placeholder="Поиск" class="input-line">
+						<input type="submit" name="s" value="&nbsp;" class="magnifier">
+					</div>
+				</div>
+			</form>
 		</nav>
 	</header>
-	<section class="side-margin">
-		<main class="logo text-uppercase">
-		<div class="logo-image">
-			<a href=""><img src="logo.png"></a>
+	<main class="side-indents">
+		<section class="logo">
+			<div class="logo-image">
+				<a href=""><img src="logo.png" alt="."></a>
 			</div>
-		<div class="logo-text">		
-			<a class="big" href=""><h1>Сферический<br>сайт</h1></a>
-			<a class="small arial" href=""><p>в вакууме</p></a>
+			<div class="logo-text  text-uppercase">
+				<a class="big" href="">
+					<h1>Сферический<br>сайт</h1>
+				</a>
+				<a class="small text-arial" href="">
+					<p>в вакууме</p>
+				</a>
 			</div>
-		</main>
+		</section>
 		<article>
-		<div class="">
-			<div>
-				<ul class="menu arial" type="dash">
-					<li><a href="">Главная</a>
-					<li>&#8594;</li>
-					<li><a href="">Сферические товары</a>
-				</ul>
-			</div>
-				<div  class="text-uppercase ">
+			<div class="">
+				<div>
+					<ul class="path-navigation text-arial">
+						<li><a href="">Главная</a>
+						<li>&#8594;</li>
+						<li><a href="">Сферические товары</a>
+					</ul>
+				</div>
+				<div class="text-uppercase">
 					<h2>Добавление сферического товара</h2>
 				</div>
-		</div>
-			<div class="">
-				<form class="form fors afd" action="#" method="post">
-				<div class="main arial">
-							<div class="field">
-							<label  class="po" for="name">Наименование</label>
+			</div>
+			<div>
+				<form class="main-content" action="#" method="post">
+					<div class="main text-arial">
+						<div class="field input-line-1">
+							<label class="po" for="name">Наименование</label>
 							<input class="style-cell cell-1" type="text" name="name" id="name"></div>
-							<div class="field">
+						<div class="field input-line-2">
 							<label for="code">Код товара</label>
 							<input class="cell-2 style-cell" type="text" name="code" id="code"></div>
-							<div class="field">
+						<div class="field input-line-3">
 							<label for="category">Категория товара</label>
-							<select class="cell-3 style-cell" name="category">
-							<option>Товары сферические вакуумные</option>
+							<select class="cell-3 style-cell" id="category">
+								<option>Товары сферические вакуумные</option>
 							</select></div>
-							<div class="field">
-							<input type="checkbox" id="subscribe" checked>
-							<label class="forma" for="subscribe">Популярный товар</label></div>
-							<div class="field">
+						<div class="field input-line-4 clearfix">
+							<label class="checkbox-line"><input type="checkbox" checked>Популярный товар</label></div>
+						<div class="field input-line-5">
 							<label for="message">Описание товара</label>
-							<textarea class="cell-4 style-cell" rows="" cols="" id="message"></textarea></div>
-							<div class="field">
-							<input class="text-uppercase add active" type="submit" value="Добавить">
-					</div>
+							<textarea class="cell-4 style-cell" id="message"></textarea></div>
+						<div class="field input-line-6">
+							<input class="text-uppercase add-button active" type="submit" value="Добавить"></div>
 					</div>
 				</form>
-				</div>
-		</article>
-	</section>
-	<footer>
-	<div class="side-margin gram">
-		<div class="mms">
-			<ul class="menu-footer text-uppercase">
-				<li><a href="">Поиск</a></li>
-				<li><a href="">Карта сайта</a></li>
-			</ul>
-		</div>
-			<div class="mmm arial">
-			<p>© Horns & Hooves, 2014</p>
 			</div>
-	</div>
+		</article>
+	</main>
+	<footer>
+		<div class="side-indents footer">
+			<div class="navi-footer">
+				<ul class="menu-footer text-uppercase">
+					<li><a href="">Поиск</a></li>
+					<li><a href="">Карта сайта</a></li>
+				</ul>
+			</div>
+			<div class="copyright text-arial">
+				<p>&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</p>
+			</div>
+		</div>
 	</footer>
-	</body>
+</body>
+
 </html>
