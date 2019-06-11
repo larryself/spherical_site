@@ -1,36 +1,17 @@
 @font-face {
-  font-family: "fregatbold";
-  src: url("fregat_bold-webfont.woff2") format("woff2"),
-    url("fregat_bold-webfont.woff") format("woff");
+  font-family: 'Fregat Bold';
+  src: url('Fregat-Bold.eot');
+  src: url('Fregat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('Fregat-Bold.woff') format('woff'),
+  url('Fregat-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: "fregatbold_italic";
-  src: url("fregat_bold_italic-webfont.woff2") format("woff2"),
-    url("fregat_bold_italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fregatitalic";
-  src: url("fregat_italic-webfont.woff2") format("woff2"),
-    url("fregat_italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fregatregular";
-  src: url("fregat_regular-webfont.woff2") format("woff2"),
-    url("fregat_regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+  }
 body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: "Fregat";
+  font-family: 'Fregat Bold';
   font-weight: bold;
 }
 :root {
@@ -130,7 +111,7 @@ article {
   margin: auto;
   width: 183px;
   font-weight: bold;
-  font-family: "Fregat";
+  font-family: 'Fregat Bold';
   font-size: 16px;
 }
 .menu-head {
@@ -139,7 +120,7 @@ article {
 }
 .main-content .active {
   font-size: 16px;
-  font-family: "Fregat";
+  font-family: 'Fregat Bold';
 }
 .logo {
   padding-bottom: 67px;
@@ -171,7 +152,7 @@ article {
 .logo-text .big {
   letter-spacing: px;
   line-height: normal;
-  font-family: "Fregat";
+  font-family: 'Fregat Bold';
   font-size: 24px;
 }
 .small p {
