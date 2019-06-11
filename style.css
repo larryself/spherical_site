@@ -37,7 +37,7 @@ body {
   --main-color: #555555;
 }
 header {
-  border: 1px solid #f2f2f2;
+
   padding: 0;
   margin: 0;
   background: #f2f2f2;
@@ -54,8 +54,8 @@ article {
 }
 
 .side-indents {
-  padding-right: 17%;
-  padding-left: 12.5%;
+  padding-right: 16%;
+  padding-left: 12.7%;
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -66,13 +66,16 @@ article {
   padding: 0;
   list-style: none;
   display: flex;
+  white-space: nowrap;
 }
+.header-menu ul {justify-content: space-around;}
 .path-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   padding-bottom: 1px;
+  white-space: nowrap;
 }
 .header-menu ul a,
 .menu-footer a {
@@ -81,9 +84,10 @@ article {
   color: #1a09c9;
   text-decoration: none;
 }
-.header-menu ul a {
-  padding-top: 7px;
+.header-menu ul li {
+  padding-right: 1.8em;
 }
+.header-menu ul a {  padding-top: 7px;}
 .path-navigation a {
   display: block;
   padding: 4px 0px;
@@ -98,7 +102,6 @@ article {
 }
 .header-menu ul li {
   display: inline-block;
-  padding-right: 28px;
   text-transform: uppercase;
 }
 .menu-footer li {
@@ -108,14 +111,13 @@ article {
 }
 .header-menu ul {
   padding-top: 5px;
+ 
 }
-.header-menu li:nth-child(3) {
-  padding-right: 15px;
+
+.header-menu ul li:nth-child(3) {
+  padding-right: 14px;
 }
-/* .for label {
-	font-size: 12px;
-} */
-input {
+.style-cell {
   vertical-align: middle;
   padding: 5px 5px 9px 5px;
 }
@@ -144,7 +146,7 @@ input {
 }
 .logo-image {
   padding-left: 2px;
-  padding-top: 52px;
+  padding-top: 54px;
   padding-right: 28px;
 }
 .logo-text {
@@ -164,7 +166,7 @@ input {
 }
 .logo-text h1 {
   margin: 0;
-  padding-top: 45px;
+  padding-top: 47px;
 }
 .logo-text .big {
   letter-spacing: px;
@@ -307,7 +309,7 @@ select option {
 }
 .main-content textarea {
   border-radius: 5px;
-  height: 165px;
+  height: 157px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.4);
 }
@@ -341,7 +343,7 @@ select option {
 }
 .input-line-4 label {
   margin: 0;
-  padding-top: 4px;
+  padding-top: 2px;
   padding-bottom: 8px;
 }
 .input-line-4 input[type="checkbox"] {
@@ -350,7 +352,7 @@ select option {
 .main-content .input-line-5 {
   padding-bottom: 30px;
   align-items: end;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 }
 .input-line-5 label {
   padding-top: 7px;
@@ -372,21 +374,22 @@ select option {
   width: 302px;
 }
 .cell-4 {
-  width: 460px;
+  width: 451px;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-/*============ Способ 1 - абсолютное позиционирование =============*/
 html {
   height: 100%;
+  WIDTH: 100%
 }
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  WIDTH: 100%
 }
 header {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
