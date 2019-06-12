@@ -1,27 +1,23 @@
 @font-face {
-  font-family: 'Fregat';
-  src: url('../fonts/Fregat-Bold.eot');
-  src: url('../fonts/Fregat-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Fregat-Bold.svg#Fregat-Bold') format('svg'),
-       url('../fonts/Fregat-Bold.ttf') format('truetype'),
-       url('../fonts/Fregat-Bold.woff') format('woff'),
-       url('../fonts/Fregat-Bold.woff2') format('woff2');
+  font-family: "Fregat";
+  src: url("fonts/Fregat_bold.eot");
+  src: local("☺"), url("fonts/Fregat_bold.woff") format("woff"),
+    url("fonts/Fregat_bold.ttf") format("truetype"),
+    url("fonts/Fregat_bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family:'Fregat';
+  font-family: "Fregat";
   font-weight: bold;
 }
 :root {
   --main-color: #555555;
 }
 header {
-
   padding: 0;
   margin: 0;
   background: #f2f2f2;
@@ -52,7 +48,9 @@ article {
   display: flex;
   white-space: nowrap;
 }
-.header-menu ul {justify-content: space-around;}
+.header-menu ul {
+  justify-content: space-around;
+}
 .path-navigation {
   margin: 0;
   padding: 0;
@@ -68,10 +66,12 @@ article {
   color: #1a09c9;
   text-decoration: none;
 }
-.header-menu ul li{
+.header-menu ul li {
   padding-right: 1.8em;
 }
-.header-menu ul a {  padding-top: 7px;}
+.header-menu ul a {
+  padding-top: 7px;
+}
 .path-navigation a {
   display: block;
   padding: 4px 0px;
@@ -115,7 +115,7 @@ article {
   margin: auto;
   width: 183px;
   font-weight: bold;
-  font-family: 'Fregat';
+  font-family: "Fregat";
   font-size: 16px;
 }
 .menu-head {
@@ -124,7 +124,7 @@ article {
 }
 .main-content .active {
   font-size: 16px;
-  font-family: 'Fregat';
+  font-family: "Fregat";
 }
 .logo {
   padding-bottom: 67px;
@@ -156,7 +156,7 @@ article {
 .logo-text .big {
   letter-spacing: px;
   line-height: normal;
-  font-family: 'Fregat';
+  font-family: "Fregat";
   font-size: 24px;
 }
 .small p {
@@ -368,13 +368,13 @@ select option {
 }
 html {
   height: 100%;
-  WIDTH: 100%
+  width: 100%;
 }
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  WIDTH: 100%
+  width: 100%;
 }
 header {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
