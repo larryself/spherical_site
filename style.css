@@ -117,7 +117,7 @@ article {
 }
 .style-cell {
   vertical-align: middle;
-  padding: 5px 5px 9px 5px;
+  height: 25px;
 }
 .add-product {
   padding: 6px 14px 4px 13px;
@@ -274,10 +274,12 @@ input[type="search"] {
   align-items: center;
 }
 select {
-  color: var(--main-text-color);
+  
+ 
 }
 select option {
   font-size: 12px;
+  
 }
 .input-line-1 label {
   padding-bottom: 4px;
@@ -308,7 +310,7 @@ select option {
 .main-content textarea {
   resize: none;
   border-radius: 5px;
-  height: 157px;
+  height: 167px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.4);
 }
@@ -342,7 +344,7 @@ select option {
 }
 .input-line-4 label {
   margin: 0;
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 8px;
 }
 .input-line-4 input[type="checkbox"] {
@@ -363,16 +365,18 @@ select option {
   margin-left: 9px;
 }
 .cell-1 {
-  width: 448px;
+  width: 459px;
 }
 .cell-2 {
-  width: 291px;
+  width: 299px;
 }
 .cell-3 {
+  color: var(--main-text-color);
   width: 302px;
+  height:31px;
 }
 .cell-4 {
-  width: 451px;
+  width: 457px;
 }
 .clearfix::after {
   content: "";
