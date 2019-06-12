@@ -7,40 +7,53 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  height: 100%;
+  width: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
 body {
   margin: 0;
   padding: 0;
   background: #ffffff;
   font-family: "Fregat";
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 :root {
-  --main-color: #555555;
+  --main-text-color: #555555;
+  --color: #1a09c9;
 }
-header {
+.header-content {
   padding: 0;
   margin: 0;
   background: #f2f2f2;
+  flex: 0 0 auto;
 }
 footer {
   background: #f2f2f2;
   padding: 25px 0 75px 0;
-
   margin-bottom: 0;
+  flex: 0 0 auto;
 }
 article {
   padding-bottom: 38px;
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 
-.side-indents {
-  padding-right: 17%;
-  padding-left: 12.7%;
+.container {
+  padding-right: 17.9%;
+  padding-left: 12.5%;
 }
 .text-uppercase {
   text-transform: uppercase;
 }
-.header-menu ul,
+.main-menu,
 .menu-footer {
   margin: 0;
   padding: 0;
@@ -48,7 +61,7 @@ article {
   display: flex;
   white-space: nowrap;
 }
-.header-menu ul {
+.main-menu {
   justify-content: space-around;
 }
 .path-navigation {
@@ -59,61 +72,61 @@ article {
   padding-bottom: 1px;
   white-space: nowrap;
 }
-.header-menu ul a,
+.main-menu a,
 .menu-footer a {
   display: block;
   padding: 0;
   color: #1a09c9;
   text-decoration: none;
 }
-.header-menu ul li {
+.main-menu-item {
   padding-right: 1.8em;
 }
-.header-menu ul a {
+.main-menu a {
   padding-top: 7px;
 }
 .path-navigation a {
   display: block;
   padding: 4px 0px;
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
-.path-navigation li {
+.navigation-menu-item {
   display: inline-block;
   padding-right: 7px;
 }
-.path-navigation li:nth-child(2) {
+.navigation-menu-item:nth-child(2) {
   padding-top: 3px;
 }
-.header-menu ul li {
+.main-menu-item {
   display: inline-block;
   text-transform: uppercase;
 }
-.menu-footer li {
+.menu-footer-item {
   display: inline-block;
   padding-right: 28px;
   text-transform: uppercase;
 }
-.header-menu ul {
+.main-menu {
   padding-top: 5px;
 }
-.header-menu ul li:nth-child(3) {
-  padding-right: 10px;
+.main-menu-item:nth-child(3) {
+  padding-right: 14px;
 }
-.header-menu ul li:nth-child(4) {
+.main-menu-item:nth-child(4) {
   padding-right: 0;
 }
 .style-cell {
   vertical-align: middle;
   padding: 5px 5px 9px 5px;
 }
-.add-product input[type="submit"] {
-  padding: 6px 5px 4px 5px;
+.add-product {
+  padding: 6px 14px 4px 13px;
   background: rgba(0, 0, 0, 0);
-  color: var(--main-color);
+  color: var(--main-text-color);
   border: 1px solid #555555;
   border-radius: 20px;
   margin: auto;
-  width: 183px;
+  width: 100%;
   font-weight: bold;
   font-family: "Fregat";
   font-size: 16px;
@@ -127,7 +140,7 @@ article {
   font-family: "Fregat";
 }
 .logo {
-  padding-bottom: 67px;
+  padding-bottom: 57px;
 }
 .logo-image {
   padding-left: 2px;
@@ -147,7 +160,7 @@ article {
 }
 
 .logo-text a:visited {
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 .logo-text h1 {
   margin: 0;
@@ -159,10 +172,11 @@ article {
   font-family: "Fregat";
   font-size: 24px;
 }
-.small p {
+.small {
   margin: 0;
   padding-left: 2px;
   text-transform: none;
+  vertical-align: super;
 }
 h2 {
   margin: 0;
@@ -175,17 +189,16 @@ h2 {
   margin-bottom: 0;
 }
 .searching-line {
-  width: 23%;
+  width: 23.2%;
   position: relative;
-  padding-right: 11px;
   padding-top: 4px;
 }
-.searching-line input {
+.input-line {
   border: none;
 }
-.searching-line .input-line {
+.input-line {
   width: 100%;
-  padding: 10px 24px 10px 10px;
+  padding: 10px 26px 8px 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2),
@@ -193,24 +206,25 @@ h2 {
   border-radius: 14px;
   background: #fff;
   font: 12px Arial, sans-serif;
-  color: var(--main-color);
+  color: var(--main-text-color);
   outline: none;
   opacity: 0.5;
 }
-.searching-line .input-line:focus {
+.input-line:focus {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.4);
   background: #fff;
   color: #333;
 }
-.searching-line .magnifier {
+.magnifier {
   position: absolute;
   top: 13px;
-  right: 18px;
+  right: 7px;
   width: 17px;
   height: 20px;
   cursor: pointer;
   opacity: 1;
+  border: none;
 }
 .searching-line .magnifier:hover {
   opacity: 0.8;
@@ -218,15 +232,14 @@ h2 {
 input[type="search"] {
   -webkit-appearance: none;
 }
-.searching-line input {
-  padding-top: 20px;
-}
+
 .searching-line .magnifier {
   background: url(lypa.gif) no-repeat;
 }
-.header {
+.header-navigation {
   display: flex;
   justify-content: space-between;
+  padding: 12px 0;
 }
 .navi-footer {
   margin-left: 2px;
@@ -234,10 +247,10 @@ input[type="search"] {
 }
 .copyright p {
   margin: 0;
-  padding: 3px 12px 0 0;
+  padding: 3px 0 0 0;
 }
 .header-content {
-  padding: 11px 0;
+ 
 }
 .main-content {
   padding-bottom: 41px;
@@ -261,7 +274,7 @@ input[type="search"] {
   align-items: center;
 }
 select {
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 select option {
   font-size: 12px;
@@ -273,7 +286,7 @@ select option {
   padding-bottom: 7px;
 }
 .input-line-3 select {
-  color: var(--main-color);
+  color: var(--main-text-color);
   margin-left: 9px;
 }
 .input-line-4 label input[type="checkbox"] {
@@ -293,6 +306,7 @@ select option {
   border-radius: 30px;
 }
 .main-content textarea {
+  resize: none;
   border-radius: 5px;
   height: 157px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),
@@ -335,7 +349,6 @@ select option {
   margin: 0;
 }
 .main-content .input-line-5 {
-  padding-bottom: 30px;
   align-items: end;
   padding-bottom: 40px;
 }
@@ -365,26 +378,4 @@ select option {
   content: "";
   display: table;
   clear: both;
-}
-html {
-  height: 100%;
-  width: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-header {
-  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 0 0 auto;
-}
-.content {
-  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 1 0 auto;
-}
-footer {
-  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 0 0 auto;
 }
