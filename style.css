@@ -42,15 +42,18 @@ footer {
   flex: 0 0 auto;
 }
 article {
-  padding-bottom: 38px;
+  margin-bottom: 99px;
   color: var(--main-text-color);
 }
 .container {
-  padding-right: 17.9%;
+  padding-right: 17.8%;
   padding-left: 12.5%;
 }
 .text-uppercase {
   text-transform: uppercase;
+}
+.header-menu {
+ 
 }
 .main-menu,
 .menu-footer {
@@ -59,6 +62,7 @@ article {
   list-style: none;
   display: flex;
   white-space: nowrap;
+  align-items: center;
 }
 .main-menu {
   justify-content: space-around;
@@ -75,15 +79,19 @@ article {
 .menu-footer a {
   display: block;
   padding: 0;
-  color: #1a09c9;
+  
   text-decoration: none;
 }
-.main-menu-item {
-  padding-right: 1.8em;
+.menu-item a {
+  padding: 0 14px;
 }
-.main-menu a {
+.menu-item:hover {
+  opacity: 0.5;
+}
+.menu-item:first-child{margin-left: -13px}
+/* .main-menu a {
   padding-top: 7px;
-}
+} */
 .path-navigation a {
   display: block;
   padding: 4px 0px;
@@ -99,26 +107,35 @@ article {
 .main-menu-item {
   display: inline-block;
   text-transform: uppercase;
+  
 }
 .menu-footer-item {
   display: inline-block;
   padding-right: 28px;
   text-transform: uppercase;
+
 }
-.main-menu {
+/* .main-menu {
   padding-top: 5px;
-}
+} */
 .main-menu-item:nth-child(3) {
-  padding-right: 14px;
+  /* padding-right: 14px; */
 }
 .main-menu-item:nth-child(4) {
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 .style-cell {
   vertical-align: middle;
   height: 25px;
   color: var(--main-text-color);
 }
+.actives {  height:28px;    
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  color: var(--main-text-color);
+  border: 1px solid #555555;
+  border-radius: 20px;}
 .add-product {
   padding: 6px 14px 4px 13px;
   background: rgba(0, 0, 0, 0);
@@ -140,12 +157,13 @@ article {
   font-family: "Fregat";
 }
 .logo {
-  padding-bottom: 57px;
+  margin-bottom: 57px;
+  margin-top: 47px;
 }
 .logo-image {
-  padding-left: 2px;
-  padding-top: 54px;
-  padding-right: 28px;
+  margin-left: 2px;
+  margin-top: 7px;
+  margin-right: 28px;
 }
 .logo-text {
   position: relative;
@@ -162,8 +180,7 @@ article {
   color: var(--main-text-color);
 }
 .logo-text h1 {
-  margin: 0;
-  padding-top: 47px;
+  margin:0;
 }
 .logo-text .big {
   letter-spacing: px;
@@ -182,15 +199,14 @@ h2 {
   padding-top: 5px;
   font-size: 30px;
 }
-.footer {
+.menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0;
 }
 .header-search {
   position: relative;
-  width: 23.3%;
-  padding-top: 4px;
+  width: 219px;
+  /* padding-top: 4px; */
 }
 .header-search button {
   border: none;
@@ -200,8 +216,8 @@ h2 {
   display: block;
   background-color: transparent;
   color: transparent;
-  height: 41px;
-  width: 35px;
+  height: 35px;
+  width: 36px;
   cursor: pointer;
 }
 .header-search .input-line {
@@ -209,7 +225,8 @@ h2 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 33px;
-  padding-left: 10px;
+  padding-top: 3px;
+  padding-left: 9px;
   padding-right: 35px;
   border-radius: 20px;
   width: 100%;
@@ -223,7 +240,7 @@ h2 {
 .header-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 15px 0 12px;
 }
 .navi-footer {
   margin-left: 2px;
@@ -234,7 +251,6 @@ h2 {
   padding: 3px 0 0 0;
 }
 .main-content {
-  padding-bottom: 41px;
   padding-top: 67px;
   padding-left: 1px;
   margin: 0px auto;
