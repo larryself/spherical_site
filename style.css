@@ -7,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 html {
   height: 100%;
   width: 100%;
@@ -24,6 +25,8 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  max-width: 3000px;
+  min-width:820px;
 }
 :root {
   --main-text-color: #555555;
@@ -42,21 +45,18 @@ footer {
   flex: 0 0 auto;
 }
 article {
-  margin-bottom: 99px;
+  margin-bottom: 100px;
   color: var(--main-text-color);
 }
 .container {
   padding-right: 17.8%;
   padding-left: 12.5%;
+
 }
 .text-uppercase {
   text-transform: uppercase;
 }
-.header-menu {
- 
-}
-.main-menu,
-.menu-footer {
+.main-menu{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -67,19 +67,10 @@ article {
 .main-menu {
   justify-content: space-around;
 }
-.path-navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  padding-bottom: 1px;
-  white-space: nowrap;
-}
-.main-menu a,
-.menu-footer a {
+
+.main-menu a {
   display: block;
   padding: 0;
-  
   text-decoration: none;
 }
 .menu-item a {
@@ -89,41 +80,22 @@ article {
   opacity: 0.5;
 }
 .menu-item:first-child{margin-left: -13px}
-/* .main-menu a {
-  padding-top: 7px;
-} */
-.path-navigation a {
-  display: block;
-  padding: 4px 0px;
-  color: var(--main-text-color);
-}
-.navigation-menu-item {
-  display: inline-block;
-  padding-right: 7px;
-}
-.navigation-menu-item:nth-child(2) {
-  padding-top: 3px;
-}
-.main-menu-item {
-  display: inline-block;
-  text-transform: uppercase;
-  
-}
-.menu-footer-item {
-  display: inline-block;
-  padding-right: 28px;
-  text-transform: uppercase;
 
-}
-/* .main-menu {
-  padding-top: 5px;
-} */
-.main-menu-item:nth-child(3) {
-  /* padding-right: 14px; */
-}
-.main-menu-item:nth-child(4) {
-  /* padding-right: 0; */
-}
+.breadcrumbs {
+  margin: 0 0 10px; 
+  padding: 0;
+ }
+ .breadcrumbs .navigation-menu-item {
+  display: inline-block; 
+ } 
+ .breadcrumbs a { 
+  color: var(--main-text-color);
+ }
+ .breadcrumbs .navigation-menu-item + .navigation-menu-item::before {
+  content: '→'; 
+  padding: 0px 4px 0px 3px; 
+ }
+
 .style-cell {
   vertical-align: middle;
   height: 25px;
@@ -136,28 +108,13 @@ article {
   color: var(--main-text-color);
   border: 1px solid #555555;
   border-radius: 20px;}
-.add-product {
-  padding: 6px 14px 4px 13px;
-  background: rgba(0, 0, 0, 0);
-  color: var(--main-text-color);
-  border: 1px solid #555555;
-  border-radius: 20px;
-  margin: auto;
-  width: 100%;
-  font-weight: bold;
-  font-family: "Fregat";
-  font-size: 16px;
-}
-.menu-head {
-  display: flex;
-  justify-content: space-between;
-}
+
 .main-content .active {
   font-size: 16px;
   font-family: "Fregat";
 }
 .logo {
-  margin-bottom: 57px;
+  margin-bottom: 61px;
   margin-top: 47px;
 }
 .logo-image {
@@ -196,7 +153,6 @@ article {
 }
 h2 {
   margin: 0;
-  padding-top: 5px;
   font-size: 30px;
 }
 .menu {
@@ -242,10 +198,6 @@ h2 {
   justify-content: space-between;
   padding: 15px 0 12px;
 }
-.navi-footer {
-  margin-left: 2px;
-  display: inline-block;
-}
 .copyright p {
   margin: 0;
   padding: 3px 0 0 0;
@@ -257,7 +209,7 @@ h2 {
 }
 .main-content label,
 .main-content input [type="checkbox"] {
-  width: 150px;
+  width: 159px;
   text-align: left;
 }
 .checkbox-line {
@@ -281,19 +233,20 @@ select option {
 }
 .input-line-3 select {
   color: var(--main-text-color);
-  margin-left: 9px;
+
 }
 .input-line-4 label input[type="checkbox"] {
   margin-right: 10px;
   border-style: solid;
 }
-.filed .input-line-6 {
-  padding-top: 10px;
-}
+
 .main-content .field {
   padding-bottom: 21px;
   font-size: 12px;
   vertical-align: middle;
+}
+.field:last-child{
+  padding-bottom: 0px;
 }
 .add-button {
   border-radius: 30px;
@@ -349,11 +302,11 @@ select option {
   padding-top: 7px;
 }
 .input-line-6 {
-  padding-left: 151px;
+  margin-left: 160px;
 }
 .field input,
 .field textarea {
-  margin-left: 9px;
+
 }
 .cell-1 {
   width: 459px;
