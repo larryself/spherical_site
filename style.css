@@ -114,7 +114,7 @@ article {
   font-family: "Fregat";
 }
 .logo {
-  margin-bottom: 61px;
+  margin-bottom: 71px;
   margin-top: 47px;
 }
 .logo-image {
@@ -138,6 +138,7 @@ article {
 }
 .logo-text h1 {
   margin:0;
+  width: 310px;
 }
 .logo-text .big {
   letter-spacing: px;
@@ -146,10 +147,11 @@ article {
   font-size: 24px;
 }
 .small {
+  display: block;
   margin: 0;
   padding-left: 2px;
   text-transform: none;
-  vertical-align: super;
+
 }
 h2 {
   margin: 0;
@@ -303,10 +305,6 @@ select option {
 }
 .input-line-6 {
   margin-left: 160px;
-}
-.field input,
-.field textarea {
-
 }
 .cell-1 {
   width: 459px;
