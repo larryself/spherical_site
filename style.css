@@ -26,7 +26,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 3000px;
-  min-width:820px;
+  min-width: 820px;
 }
 :root {
   --main-text-color: #555555;
@@ -51,12 +51,11 @@ article {
 .container {
   padding-right: 17.8%;
   padding-left: 12.5%;
-
 }
 .text-uppercase {
   text-transform: uppercase;
 }
-.main-menu{
+.main-menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,35 +78,39 @@ article {
 .menu-item:hover {
   opacity: 0.5;
 }
-.menu-item:first-child{margin-left: -13px}
+.menu-item:first-child {
+  margin-left: -13px;
+}
 
 .breadcrumbs {
-  margin: 0 0 10px; 
+  margin: 0 0 10px;
   padding: 0;
- }
- .breadcrumbs .navigation-menu-item {
-  display: inline-block; 
- } 
- .breadcrumbs a { 
+}
+.breadcrumbs .navigation-menu-item {
+  display: inline-block;
+}
+.breadcrumbs a {
   color: var(--main-text-color);
- }
- .breadcrumbs .navigation-menu-item + .navigation-menu-item::before {
-  content: '→'; 
-  padding: 0px 4px 0px 3px; 
- }
+}
+.breadcrumbs .navigation-menu-item + .navigation-menu-item::before {
+  content: "→";
+  padding: 0px 4px 0px 3px;
+}
 
 .style-cell {
   vertical-align: middle;
   height: 25px;
   color: var(--main-text-color);
 }
-.actives {  height:28px;    
+.actives {
+  height: 28px;
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0);
   color: var(--main-text-color);
   border: 1px solid #555555;
-  border-radius: 20px;}
+  border-radius: 20px;
+}
 
 .main-content .active {
   font-size: 16px;
@@ -137,7 +140,7 @@ article {
   color: var(--main-text-color);
 }
 .logo-text h1 {
-  margin:0;
+  margin: 0;
   width: 310px;
 }
 .logo-text .big {
@@ -151,7 +154,6 @@ article {
   margin: 0;
   padding-left: 2px;
   text-transform: none;
-
 }
 h2 {
   margin: 0;
@@ -207,7 +209,10 @@ h2 {
 .main-content {
   padding-top: 67px;
   padding-left: 1px;
-  margin: 0px auto;
+  display: table;
+}
+.main {
+  display: inline-block;
 }
 .main-content label,
 .main-content input [type="checkbox"] {
@@ -227,27 +232,19 @@ h2 {
 select option {
   font-size: 12px;
 }
-.input-line-1 label {
-  padding-bottom: 4px;
-}
-.input-line-2 label {
-  padding-bottom: 7px;
-}
 .input-line-3 select {
   color: var(--main-text-color);
-
 }
 .input-line-4 label input[type="checkbox"] {
   margin-right: 10px;
   border-style: solid;
 }
-
 .main-content .field {
   padding-bottom: 21px;
   font-size: 12px;
   vertical-align: middle;
 }
-.field:last-child{
+.field:last-child {
   padding-bottom: 0px;
 }
 .add-button {
