@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body vlink="#1a09c9">
 	<header>
 		<nav class="container header-content">
 
@@ -26,8 +26,8 @@
 						<input type="search" name="searching-line" placeholder="Поиск" class="input-line" />
 						<button><img src="lypa.gif"></button>
 					</div>
+				</form>
 			</div>
-			</form>
 		</nav>
 	</header>
 	<main class="container content">
@@ -61,26 +61,27 @@
 					<div class="main text-arial">
 						<div class="field input-line-1">
 							<label class="column" for="name">Наименование</label>
-							<input class="style-cell cell-1" type="text" name="name" id="name" />
+							<input class="style-cell wide-line" type="text" name="name" id="name" />
 						</div>
 						<div class="field input-line-2">
-							<label for="code">Код товара</label>
-							<input class="cell-2 style-cell" type="text" name="code" id="code" />
+							<label class="column" for="code">Код товара</label>
+							<input class="narrow-line style-cell" type="text" name="code" id="code" />
 						</div>
 						<div class="field input-line-3">
-							<label for="category">Категория товара</label>
-							<select class="cell-3 style-cell" id="category">
+							<label class="column" for="category">Категория товара</label>
+							<select class="narrow-line style-cell" id="category">
 								<option>Товары сферические вакуумные</option>
 							</select>
 						</div>
-						<div class="field input-line-4 clearfix">
-							<label class="checkbox-line"><input type="checkbox" checked />Популярный товар</label>
+						<div class="field input-line-4">
+							<label class="checkbox-line column"><input type="checkbox" checked />Популярный товар</label>
 						</div>
 						<div class="field input-line-5">
-							<label for="message">Описание товара</label>
-							<textarea class="cell-4 style-cell" id="message"></textarea>
+							<label class="column" for="message">Описание товара</label>
+							<textarea class="wide-line style-cell" id="message"></textarea>
 						</div>
-						<div class="field input-line-6">
+						<div class="field">
+							<div class="column"></div>
 							<input class="text-uppercase add-button active" type="submit" value="Добавить" />
 						</div>
 					</div>
