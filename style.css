@@ -7,7 +7,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 html {
   height: 100%;
   width: 100%;
@@ -45,12 +44,12 @@ footer {
   flex: 0 0 auto;
 }
 article {
-  -ms-color: #555555 , (85,85,85);
   color: var(--main-text-color);
 }
 .container {
   padding-right: 17.8%;
   padding-left: 12.5%;
+  max-width: 2000px
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -66,7 +65,6 @@ article {
 .main-menu {
   justify-content: space-around;
 }
-
 .main-menu a {
   display: block;
   padding: 0;
@@ -81,8 +79,10 @@ article {
 .menu-item:first-child {
   margin-left: -13px;
 }
-main {padding-top: 47px;
-padding-bottom: 100px;}
+main {
+  padding-top: 47px;
+  padding-bottom: 100px;
+}
 .breadcrumbs {
   margin: 0 0 10px;
   padding: 0;
@@ -98,13 +98,12 @@ padding-bottom: 100px;}
   content: "→";
   padding: 0px 4px 0px 3px;
 }
-
 .style-cell {
   vertical-align: middle;
-  height: 31px;
   -ms-color: #555555;
   color: var(--main-text-color);
   box-sizing: border-box;
+  padding: 2px 7px;
 }
 .actives {
   height: 28px;
@@ -123,7 +122,6 @@ padding-bottom: 100px;}
 }
 .logo {
   margin-bottom: 71px;
-
 }
 .logo-image {
   margin-left: 2px;
@@ -178,14 +176,15 @@ h2 {
 .header-search button {
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: -11px;
   display: block;
   background-color: transparent;
   color: transparent;
   height: 35px;
   width: 36px;
   cursor: pointer;
+  background: url(lypa.gif) no-repeat;
 }
 .header-search .input-line {
   display: block;
@@ -199,7 +198,7 @@ h2 {
   width: 100%;
   background: #fff;
   font: 12px Arial, sans-serif;
-  -ms-color: #555555, (85,85,85);
+  -ms-color: #555555, (85, 85, 85);
   color: var(--main-text-color);
   border: none;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2),
@@ -216,7 +215,6 @@ h2 {
 }
 .main-content {
   margin-top: 67px;
-
   display: table;
 }
 .main {
@@ -226,7 +224,6 @@ h2 {
   width: 159px;
   text-align: left;
 }
-
 .text-arial {
   font: 12px Arial, sans-serif;
 }
@@ -238,7 +235,6 @@ select option {
   font-size: 12px;
 }
 .input-line-3 select {
-  -ms-color: #555555 , (85,85,85);
   color: var(--main-text-color);
 }
 .input-line-4 label input[type="checkbox"] {
@@ -259,14 +255,8 @@ select option {
 .main-content textarea {
   resize: none;
   border-radius: 5px;
-  height: 170px;
-  box-sizing:border-box;
-
-}
-.main-content select {
-  border-radius: 5px;
-  padding: 7px;
-
+  height: 172px;
+  box-sizing: border-box;
 }
 .main-content input[type="submit"] {
   padding: 16px 71px 14px 71px;
@@ -281,25 +271,13 @@ select option {
   color: white;
 }
 .style-cell {
-  border:1px solid #f6f6f6;
+  border: 1px solid #f6f6f6;
   background: #f6f6f6;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3),
-  inset 1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(0, 0, 0, 0.1);
 }
 .main-content .input-line-2 {
   padding-bottom: 17px;
-}
-.input-line-3 label {
-  padding-bottom: 4px;
-}
-.input-line-4 label {
-  margin: 0;
-  padding-top: 3px;
-  padding-bottom: 8px;
-}
-.input-line-4 input[type="checkbox"] {
-  margin: 0;
 }
 .main-content .input-line-5 {
   align-items: end;
@@ -309,21 +287,12 @@ select option {
   padding-top: 7px;
 }
 .wide-line {
-  width: 465px;
+  width: 462px;
   box-sizing: border-box;
+  height: 31px;
 }
-.narrow-line{
-  width: 305px;
+.narrow-line {
+  width: 302px;
   box-sizing: border-box;
   height: 33px;
-}
-.cell-3 {
-  -ms-color: #555555 , (85,85,85);
-  color: var(--main-text-color);
-  
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
