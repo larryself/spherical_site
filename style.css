@@ -49,7 +49,7 @@ article {
 .container {
   padding-right: 17.8%;
   padding-left: 12.5%;
-  max-width: 2000px
+  max-width: 2000px;
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -61,17 +61,14 @@ article {
   display: flex;
   white-space: nowrap;
   align-items: center;
-}
-.main-menu {
   justify-content: space-around;
 }
 .main-menu a {
   display: block;
   padding: 0;
   text-decoration: none;
-}
-.menu-item a {
   padding: 0 14px;
+  color: var(--color);
 }
 .menu-item:hover {
   opacity: 0.5;
@@ -87,11 +84,10 @@ main {
   margin: 0 0 10px;
   padding: 0;
 }
-.breadcrumbs .navigation-menu-item {
+.navigation-menu-item {
   display: inline-block;
 }
 .breadcrumbs a {
-  -ms-color: #555555;
   color: var(--main-text-color);
 }
 .navigation-menu-item + .navigation-menu-item::before {
@@ -100,7 +96,6 @@ main {
 }
 .style-cell {
   vertical-align: middle;
-  -ms-color: #555555;
   color: var(--main-text-color);
   box-sizing: border-box;
   padding: 2px 7px;
@@ -110,12 +105,12 @@ main {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0);
-  -ms-color: #555555;
-  color: var(--main-text-color);
   border: 1px solid #555555;
   border-radius: 20px;
 }
-
+.actives a {
+  color: var(--main-text-color);
+}
 .main-content .active {
   font-size: 16px;
   font-family: "Fregat";
@@ -134,13 +129,15 @@ main {
 .logo-text,
 .logo-image {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: text-top;
+}
+.logo-image a {
+  display: block;
 }
 .logo-text a {
   text-decoration: none;
 }
 .logo-text a:visited {
-  -ms-color: #555555;
   color: var(--main-text-color);
 }
 .logo-text h1 {
@@ -148,7 +145,6 @@ main {
   width: 310px;
 }
 .logo-text .big {
-  letter-spacing: px;
   line-height: normal;
   font-family: "Fregat";
   font-size: 24px;
@@ -171,7 +167,6 @@ h2 {
 .header-search {
   position: relative;
   width: 219px;
-  /* padding-top: 4px; */
 }
 .header-search button {
   border: none;
@@ -198,7 +193,6 @@ h2 {
   width: 100%;
   background: #fff;
   font: 12px Arial, sans-serif;
-  -ms-color: #555555, (85, 85, 85);
   color: var(--main-text-color);
   border: none;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2),
@@ -231,15 +225,10 @@ h2 {
   display: flex;
   align-items: center;
 }
-select option {
-  font-size: 12px;
-}
-.input-line-3 select {
-  color: var(--main-text-color);
-}
-.input-line-4 label input[type="checkbox"] {
+.field input[type="checkbox"] {
   margin-right: 10px;
   border-style: solid;
+  height: 33px;
 }
 .main-content .field {
   padding-bottom: 17px;
@@ -247,7 +236,7 @@ select option {
   vertical-align: middle;
 }
 .field:last-child {
-  padding-bottom: 0px;
+  padding: 26px 0px 0px 0px;
 }
 .add-button {
   border-radius: 30px;
@@ -262,7 +251,6 @@ select option {
   padding: 16px 71px 14px 71px;
   background: white;
   border: 1px solid #1a09c9;
-  -ms-color: #1a09c9;
   color: var(--color);
   font-weight: bold;
 }
@@ -275,16 +263,7 @@ select option {
   background: #f6f6f6;
   border-radius: 5px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(0, 0, 0, 0.1);
-}
-.main-content .input-line-2 {
-  padding-bottom: 17px;
-}
-.main-content .input-line-5 {
-  align-items: end;
-  padding-bottom: 43px;
-}
-.input-line-5 label {
-  padding-top: 7px;
+  font-size: 12px;
 }
 .wide-line {
   width: 462px;
@@ -295,4 +274,7 @@ select option {
   width: 302px;
   box-sizing: border-box;
   height: 33px;
+}
+.field:last-child .column {
+  width: 161px;
 }
