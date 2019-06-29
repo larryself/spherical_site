@@ -78,7 +78,7 @@ article {
 }
 main {
   padding-top: 47px;
-  padding-bottom: 100px;
+  padding-bottom: 96px;
 }
 .breadcrumbs {
   margin: 0 0 10px;
@@ -98,7 +98,7 @@ main {
   vertical-align: middle;
   color: var(--main-text-color);
   box-sizing: border-box;
-  padding: 2px 7px;
+  padding: 6px 7px 2px 7px;
 }
 .actives {
   height: 28px;
@@ -235,16 +235,13 @@ h2 {
   font-size: 12px;
   vertical-align: middle;
 }
-.field:last-child {
-  padding: 26px 0px 0px 0px;
-}
 .add-button {
   border-radius: 30px;
 }
 .main-content textarea {
   resize: none;
   border-radius: 5px;
-  height: 172px;
+  height: 173px;
   box-sizing: border-box;
 }
 .main-content input[type="submit"] {
@@ -268,13 +265,17 @@ h2 {
 .wide-line {
   width: 462px;
   box-sizing: border-box;
-  height: 31px;
+  height: 30px;
 }
 .narrow-line {
   width: 302px;
   box-sizing: border-box;
   height: 33px;
 }
-.field:last-child .column {
+.field-button {display: flex;
+  padding: 26px 0px 0px 0px;
+}
+.field-button .column {
   width: 161px;
 }
+.field:nth-child(5){align-items: baseline;}
