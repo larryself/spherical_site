@@ -23,7 +23,7 @@
 				<form>
 					<div class="header-search">
 						<input type="search" name="searching-line" placeholder="Поиск" class="input-line" />
-						<button></button>
+						<button>Найти</button>
 					</div>
 				</form>
 			</div>
@@ -36,71 +36,61 @@
 			</div>
 			<div class="logo-text  text-uppercase">
 				<a class="big" href="">
-					<h1>Сферический сайт<span class="small text-arial">в вакууме</span></h1>
-
+					<h1>Сферический сайт<span class="small text-style">в вакууме</span></h1>
 				</a>
 			</div>
 		</section>
 		<article>
-			<div>
-				<div>
-					<ul class="path-navigation breadcrumbs text-arial">
-						<li class="navigation-menu-item"><a href="">Главная</a></li>
-						<li class="navigation-menu-item">
-							<a href="">Сферические товары</a>
-						</li>
-					</ul>
-				</div>
-				<div class="text-uppercase">
-					<h2>Добавление сферического товара</h2>
-				</div>
-			</div>
-			<div>
-				<form class="main-content" action="#" method="post">
-					<div class="main text-arial">
-						<div class="field">
-							<label class="column" for="name">Наименование</label>
-							<input class="wide-line style-cell" type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label class="column" for="code">Код товара</label>
-							<input class="narrow-line style-cell" type="text" name="code" id="code" />
-						</div>
-						<div class="field">
-							<label class="column" for="category">Категория товара</label>
-							<select class="narrow-line style-cell" id="category">
-								<option>Товары сферические вакуумные</option>
-							</select>
-						</div>
-						<div class="field">
-							<input type="checkbox" checked>
-							<label class="checkbox-line column">Популярный товар</label>
-						</div>
-						<div class="field">
-							<label class="column" for="message">Описание товара</label>
-							<textarea class="wide-line style-cell" id="message"></textarea>
-						</div>
-						<div class="field-button">
-							<div class="column"></div>
-							<input class="text-uppercase add-button active" type="submit" value="Добавить" />
-						</div>
+			<ul class="path-navigation breadcrumbs text-style">
+				<li class="navigation-menu-item"><a href="">Главная</a></li>
+				<li class="navigation-menu-item">
+					<a href="">Сферические товары</a>
+				</li>
+			</ul>
+			<h2 class="text-uppercase">Добавление сферического товара</h2>
+			<form class="main-content" action="#" method="post">
+				<div class="main text-style">
+					<div class="field">
+						<label class="column" for="name">Наименование</label>
+						<input class="wide-line style-cell" type="text" name="name" id="name" />
 					</div>
-				</form>
-			</div>
+					<div class="field">
+						<label class="column" for="code">Код товара</label>
+						<input class="narrow-line style-cell" type="text" name="code" id="code" />
+					</div>
+					<div class="field">
+						<label class="column" for="category">Категория товара</label>
+						<select class="narrow-line style-cell" id="category">
+							<option>Товары сферические вакуумные</option>
+						</select>
+					</div>
+					<div class="field">
+						<input type="checkbox" id="checkbox" checked>
+						<label class="checkbox-line column" for="checkbox">Популярный товар</label>
+					</div>
+					<div class="field ">
+						<label class="column" for="message">Описание товара</label>
+						<textarea class="wide-line style-cell" id="message"></textarea>
+					</div>
+					<div class="field-button">
+						<input class="text-uppercase add-button active" type="submit" value="Добавить" />
+					</div>
+				</div>
+			</form>
+
 		</article>
 	</main>
 	<footer>
-		<div class="container footer menu">
-			<div class="menu">
+		<div class="container">
+			<div class="footer menu">
 				<ul class="main-menu text-uppercase">
 					<li class="menu-item"><a href="">Поиск</a></li>
 					<li class="menu-item"><a href="">Карта сайта</a></li>
 				</ul>
+				<div class="copyright text-style">
+					<p>&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</p>
+				</div>
 			</div>
-			<div class="copyright text-arial">
-				<p>&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</p>
-			</div>
-		</div>
 	</footer>
 </body>
 
