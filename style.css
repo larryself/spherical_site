@@ -115,7 +115,7 @@ main {
   border: 1px solid #555555;
   border-radius: 20px;
 }
-.actives a {
+.actives a{
   color: var(--main-text-color);
 }
 .main-content .active {
@@ -138,24 +138,14 @@ main {
   display: inline-block;
   vertical-align: text-top;
 }
-.logo-image a {
-  display: block;
-}
-.logo-text a {
-  text-decoration: none;
-}
-.logo-text a:visited {
-  color: var(--main-text-color);
-}
-.logo-text h1 {
-  margin: 0;
-  width: 310px;
-}
 .logo-text .big {
   line-height: normal;
   font-family: "Fregat";
-  font-size: 24px;
+  font-size: 48px;
   display: block;
+  color: var(--main-text-color);
+  margin: 0;
+  width: 310px;
 }
 .small {
   display: block;
@@ -286,10 +276,12 @@ h2 {
 .field-button .column {
   width: 161px;
 }
-.field:nth-child(5) {
+.field-style {
   align-items: baseline;
 }
 .field-button:last-child::before {
   width: 161px;
   content: "";
 }
+
+
