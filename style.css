@@ -277,11 +277,9 @@ h2 {
   width: 161px;
 }
 .field-style {
-  align-items: baseline;
+  align-items: flex-start;
 }
 .field-button:last-child::before {
   width: 161px;
   content: "";
 }
-
-
