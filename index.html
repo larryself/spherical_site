@@ -10,9 +10,9 @@
 
 <body>
 	<header>
-		<nav class="container header-content">
+		<nav class="container">
 			<div class="header-navigation">
-				<div class="header-menu menu">
+				<div class="menu">
 					<ul class="main-menu text-uppercase">
 						<li class="menu-item"><a href="">Главная</a></li>
 						<li class="menu-item"><a href="">Не Особо</a></li>
@@ -20,11 +20,9 @@
 						<li class="menu-item actives"><a href="">Добавление товара</a></li>
 					</ul>
 				</div>
-				<form>
-					<div class="header-search">
-						<input type="search" name="searching-line" placeholder="Поиск" class="input-line" />
-						<button>Найти</button>
-					</div>
+				<form class="header-search">
+					<input type="search" name="searching-line" placeholder="Поиск" class="input-line" />
+					<button>Найти</button>
 				</form>
 			</div>
 		</nav>
@@ -35,9 +33,7 @@
 				<a href=""><img src="logo.png" alt="." /></a>
 			</div>
 			<div class="logo-text  text-uppercase">
-				<a class="big" href="">
-					<h1>Сферический сайт<span class="small text-style">в вакууме</span></h1>
-				</a>
+				<h1 class="big">Сферический сайт<span class="small text-style">в вакууме</span></h1>
 			</div>
 		</section>
 		<article>
@@ -68,7 +64,7 @@
 						<input type="checkbox" id="checkbox" checked>
 						<label class="checkbox-line column" for="checkbox">Популярный товар</label>
 					</div>
-					<div class="field ">
+					<div class="field field-style">
 						<label class="column" for="message">Описание товара</label>
 						<textarea class="wide-line style-cell" id="message"></textarea>
 					</div>
@@ -77,16 +73,17 @@
 					</div>
 				</div>
 			</form>
-
 		</article>
 	</main>
 	<footer>
 		<div class="container">
-			<div class="footer menu">
-				<ul class="main-menu text-uppercase">
-					<li class="menu-item"><a href="">Поиск</a></li>
-					<li class="menu-item"><a href="">Карта сайта</a></li>
-				</ul>
+			<div class="footer-navigation">
+				<div class="menu">
+					<ul class="main-menu text-uppercase">
+						<li class="menu-item"><a href="">Поиск</a></li>
+						<li class="menu-item"><a href="">Карта сайта</a></li>
+					</ul>
+				</div>
 				<div class="copyright text-style">
 					<p>&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</p>
 				</div>

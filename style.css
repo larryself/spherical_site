@@ -39,9 +39,9 @@ header {
 }
 footer {
   background: #f2f2f2;
-  padding: 25px 0 75px 0;
   margin-bottom: 0;
   flex: 0 0 auto;
+  width: 100%;
 }
 article {
   color: var(--main-text-color);
@@ -115,7 +115,7 @@ main {
   border: 1px solid #555555;
   border-radius: 20px;
 }
-.actives a {
+.actives a{
   color: var(--main-text-color);
 }
 .main-content .active {
@@ -138,24 +138,14 @@ main {
   display: inline-block;
   vertical-align: text-top;
 }
-.logo-image a {
-  display: block;
-}
-.logo-text a {
-  text-decoration: none;
-}
-.logo-text a:visited {
-  color: var(--main-text-color);
-}
-.logo-text h1 {
-  margin: 0;
-  width: 310px;
-}
 .logo-text .big {
   line-height: normal;
   font-family: "Fregat";
-  font-size: 24px;
+  font-size: 48px;
   display: block;
+  color: var(--main-text-color);
+  margin: 0;
+  width: 310px;
 }
 .small {
   display: block;
@@ -209,6 +199,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 15px 0 12px;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 75px;
 }
 .copyright p {
   margin: 0;
@@ -286,8 +281,8 @@ h2 {
 .field-button .column {
   width: 161px;
 }
-.field:nth-child(5) {
-  align-items: baseline;
+.field-style {
+  align-items: flex-start;
 }
 .field-button:last-child::before {
   width: 161px;
