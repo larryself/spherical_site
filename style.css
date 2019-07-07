@@ -39,9 +39,9 @@ header {
 }
 footer {
   background: #f2f2f2;
-  padding: 25px 0 75px 0;
   margin-bottom: 0;
   flex: 0 0 auto;
+  width: 100%;
 }
 article {
   color: var(--main-text-color);
@@ -199,6 +199,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 15px 0 12px;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 75px;
 }
 .copyright p {
   margin: 0;
