@@ -30,6 +30,9 @@ body {
   --main-text-color: #555555;
   --color: #1a09c9;
 }
+a {
+  color: inherit;
+}
 header {
   padding: 0;
   margin: 0;
@@ -99,13 +102,26 @@ main {
   padding: 0px 4px 0px 3px;
 }
 .style-cell {
+  border: 1px solid #f6f6f6;
+  background: #f6f6f6;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px;
   vertical-align: middle;
   color: var(--main-text-color);
   box-sizing: border-box;
   padding: 6px 7px 6px 7px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+}
+.style-cell__select {
+  border: 1px solid #f6f6f6;
+  background: #f6f6f6;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  vertical-align: middle;
+  color: var(--main-text-color);
+  box-sizing: border-box;
+  padding: 6px 7px 6px 3px;
 }
 .actives {
   height: 28px;
@@ -256,13 +272,6 @@ h2 {
 .main-content input[type="submit"]:hover {
   background-color: #1a09c9;
   color: white;
-}
-.style-cell {
-  border: 1px solid #f6f6f6;
-  background: #f6f6f6;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(0, 0, 0, 0.1);
-  font-size: 12px;
 }
 .wide-line {
   width: 462px;
