@@ -121,7 +121,7 @@ main {
   vertical-align: middle;
   color: var(--main-text-color);
   box-sizing: border-box;
-  padding: 6px 7px 6px 4px;
+  padding: 6px 7px 6px 3px;
 }
 .actives {
   height: 28px;
